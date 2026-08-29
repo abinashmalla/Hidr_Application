@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-
 from pages.base_page import BasePage
 
 
@@ -7,30 +6,15 @@ class OpportunityPage(BasePage):
 
     URL = "https://hidr.com.np/"
 
-    OPPORTUNITIES = (
-        By.XPATH,
-        "//button[normalize-space()='Opportunities']"
-    )
+    OPPORTUNITIES = (By.XPATH,"//button[normalize-space()='Opportunities']")
 
-    CAREER = (
-        By.LINK_TEXT,
-        "Career"
-    )
+    CAREER = (By.LINK_TEXT,"Career")
 
-    JOIN_OUR_TEAM = (
-        By.LINK_TEXT,
-        "Join the team"
-    )
+    JOIN_OUR_TEAM = (By.LINK_TEXT,"Join the team")
 
-    MOVE_RIGHT = (
-        By.XPATH,
-        "(//*[name()='path'][@stroke-linecap='round'])[5]"
-    )
+    MOVE_RIGHT = (By.XPATH,"(//*[name()='path'][@stroke-linecap='round'])[5]")
 
-    CAREER_HEADING = (
-        By.XPATH,
-        "//h1[contains(normalize-space(),'Career')]"
-    )
+    CAREER_HEADING = (By.XPATH,"//h1[contains(normalize-space(),'Career')]")
 
     def open(self):
         self.driver.get(self.URL)
@@ -47,17 +31,11 @@ class OpportunityPage(BasePage):
 
     def click_move_right(self):
 
-        element = self.scroll_to_element(
-            self.MOVE_RIGHT
-        )
+        element = self.scroll_to_element(self.MOVE_RIGHT)
 
-        self.wait.until(
-            lambda driver: element.is_enabled()
-        )
+        self.wait.until(lambda driver: element.is_enabled())
 
-        self.javascript_click(
-            self.MOVE_RIGHT
-        )
+        self.javascript_click(self.MOVE_RIGHT)
 
     def open_opportunity_workflow(self):
 

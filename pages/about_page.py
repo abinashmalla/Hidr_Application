@@ -7,35 +7,17 @@ class AboutPage(BasePage):
 
     URL = "https://hidr.com.np/"
 
-    WHO_WE_ARE = (
-        By.XPATH,
-        "//button[normalize-space()='Who We Are']"
-    )
+    WHO_WE_ARE = (By.XPATH,"//button[normalize-space()='Who We Are']")
 
-    ABOUT_US = (
-        By.LINK_TEXT,
-        "About Us"
-    )
+    ABOUT_US = (By.LINK_TEXT,"About Us")
 
-    MAP = (
-        By.XPATH,
-        "(//div[contains(@class,'group-hover:bg-black/10')])[1]"
-    )
+    MAP = (By.XPATH,"(//div[contains(@class,'group-hover:bg-black/10')])[1]")
 
-    OUR_TEAM = (
-        By.LINK_TEXT,
-        "Our Team"
-    )
+    OUR_TEAM = (By.LINK_TEXT,"Our Team")
 
-    TEAM_CONTENT = (
-        By.XPATH,
-        "//body/main/div/section/div/div/div[2]/div[1]/div[2]"
-    )
+    TEAM_CONTENT = (By.XPATH,"//body/main/div/section/div/div/div[2]/div[1]/div[2]")
 
-    ABOUT_HEADING = (
-        By.XPATH,
-        "//h1[contains(normalize-space(),'About')]"
-    )
+    ABOUT_HEADING = (By.XPATH,"//h1[contains(normalize-space(),'About')]")
 
     def open(self):
         self.driver.get(self.URL)

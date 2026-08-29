@@ -7,45 +7,21 @@ class PartnerPage(BasePage):
 
     URL = "https://hidr.com.np/"
 
-    OPPORTUNITIES = (
-        By.XPATH,
-        "//button[normalize-space()='Opportunities']"
-    )
+    OPPORTUNITIES = (By.XPATH,"//button[normalize-space()='Opportunities']")
 
-    PARTNER_WITH_US = (
-        By.XPATH,
-        "//a[normalize-space()='Partner with us']"
-    )
+    PARTNER_WITH_US = (By.XPATH,"//a[normalize-space()='Partner with us']")
 
-    CONTACT_US = (
-        By.XPATH,
-        "//button[normalize-space()='Contact Us']"
-    )
+    CONTACT_US = (By.XPATH,"//button[normalize-space()='Contact Us']")
 
-    NAME = (
-        By.NAME,
-        "name"
-    )
+    NAME = (By.NAME,"name")
 
-    EMAIL = (
-        By.NAME,
-        "email"
-    )
+    EMAIL = (By.NAME,"email")
 
-    PHONE = (
-        By.NAME,
-        "phone"
-    )
+    PHONE = (By.NAME,"phone")
 
-    MESSAGE = (
-        By.NAME,
-        "message"
-    )
+    MESSAGE = (By.NAME,"message")
 
-    SEND_BUTTON = (
-        By.XPATH,
-        "//button[normalize-space()='SEND']"
-    )
+    SEND_BUTTON = (By.XPATH,"//button[normalize-space()='SEND']")
 
     def open(self):
         self.driver.get(self.URL)
@@ -54,16 +30,12 @@ class PartnerPage(BasePage):
     def click_opportunities(self):
         self.click(self.OPPORTUNITIES)
 
-        self.wait_visible(
-            self.PARTNER_WITH_US
-        )
+        self.wait_visible(self.PARTNER_WITH_US)
 
     def click_partner_with_us(self):
         self.click(self.PARTNER_WITH_US)
 
-        self.wait_visible(
-            self.CONTACT_US
-        )
+        self.wait_visible(self.CONTACT_US)
 
     def click_contact_us(self):
         self.click(self.CONTACT_US)

@@ -55,29 +55,29 @@ def test_hidr_complete_user_workflow(driver):
     assert "hidr.com.np" in driver.current_url
 
 
-    # # STEP 4 - About Us
-    #
-    #
-    # about.open()
-    #
-    # about.open_about_us()
-    #
-    # about.wait_for_page_load()
-    #
-    # assert about.verify_about_page()
-    #
-    #
-    # # STEP 5 - Our Team
-    #
-    #
-    # about.open()
-    #
-    # about.open_team()
-    #
-    # # Verify team section exists
-    # assert about.is_visible(
-    #     about.TEAM_CONTENT
-    # )
+    # STEP 4 - About Us
+
+
+    about.open()
+
+    about.open_about_us()
+
+    about.wait_for_page_load()
+
+    assert about.verify_about_page()
+
+
+    #  STEP 5 - Our Team
+
+
+    about.open()
+
+    about.open_team()
+
+    # Verify team section exists
+    assert about.is_visible(
+         about.TEAM_CONTENT
+     )
 
 
     # STEP 6 - Gallery
@@ -111,9 +111,9 @@ def test_hidr_complete_user_workflow(driver):
     # STEP 7 - Opportunities / Career
 
 
-    # opportunity.open()
+    opportunity.open()
 
-    # opportunity.open_opportunity_workflow()
+    opportunity.open_opportunity_workflow()
 
 
     # STEP 8 - Partner With Us

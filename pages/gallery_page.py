@@ -8,35 +8,17 @@ class GalleryPage(BasePage):
 
     URL = "https://hidr.com.np/gallery"
 
-    GALLERY_HEADING = (
-        By.XPATH,
-        "//h1[normalize-space()='Gallery']"
-    )
+    GALLERY_HEADING = (By.XPATH,"//h1[normalize-space()='Gallery']")
 
-    GALLERY_IMAGES = (
-        By.XPATH,
-        "//main//img"
-    )
+    GALLERY_IMAGES = (By.XPATH,"//main//img")
 
-    WHO_WE_ARE = (
-        By.XPATH,
-        "//nav//*[normalize-space()='Who We Are']"
-    )
+    WHO_WE_ARE = (By.XPATH,"//nav//*[normalize-space()='Who We Are']")
 
-    OPPORTUNITIES = (
-        By.XPATH,
-        "//nav//*[normalize-space()='Opportunities']"
-    )
+    OPPORTUNITIES = (By.XPATH,"//nav//*[normalize-space()='Opportunities']")
 
-    PUBLICATIONS = (
-        By.XPATH,
-        "//nav//*[normalize-space()='Publications']"
-    )
+    PUBLICATIONS = (By.XPATH,"//nav//*[normalize-space()='Publications']")
 
-    BLOG = (
-        By.XPATH,
-        "//nav//*[normalize-space()='Blog']"
-    )
+    BLOG = (By.XPATH,"//nav//*[normalize-space()='Blog']")
 
     def open(self):
         self.driver.get(self.URL)

@@ -6,40 +6,19 @@ class HomePage(BasePage):
 
     URL = "https://hidr.com.np/"
 
-    HOME = (
-        By.XPATH,
-        "//a[contains(@class,'text-[#F78707]')]"
-    )
+    HOME = (By.XPATH,"//a[contains(@class,'text-[#F78707]')]")
 
-    EXPLORE_WORK = (
-        By.XPATH,
-        "//a[normalize-space()='Explore Our Work']"
-    )
+    EXPLORE_WORK = (By.XPATH,"//a[normalize-space()='Explore Our Work']")
 
-    ALL_PROJECTS = (
-        By.XPATH,
-        "//button[normalize-space()='All Projects']"
-    )
+    ALL_PROJECTS = (By.XPATH,"//button[normalize-space()='All Projects']")
 
-    OTHER = (
-        By.XPATH,
-        "//button[normalize-space()='Other']"
-    )
+    OTHER = (By.XPATH,"//button[normalize-space()='Other']")
 
-    RESEARCH = (
-        By.XPATH,
-        "//button[normalize-space()='Research']"
-    )
+    RESEARCH = (By.XPATH,"//button[normalize-space()='Research']")
 
-    WEB = (
-        By.XPATH,
-        "//button[normalize-space()='Web']"
-    )
+    WEB = (By.XPATH,"//button[normalize-space()='Web']")
 
-    HOME_LINK = (
-        By.LINK_TEXT,
-        "Home"
-    )
+    HOME_LINK = (By.LINK_TEXT,"Home")
 
     def open(self):
         self.driver.get(self.URL)
