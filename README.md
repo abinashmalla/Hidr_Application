@@ -1,6 +1,7 @@
 # Hidr_Application
-📌 Project Overview
 <p align="justify">
+📌 Project Overview
+
 
 HIDR Automation is an automated testing framework developed to test
 the HIDR Nepal website using Python, Selenium WebDriver, and
@@ -55,5 +56,6 @@ Chrome                      Browser testing
 Firefox                     Browser testing
 Microsoft Edge / Chromium   Cross-browser testing
 Git                         Version control
+</p>
 GitHub                      Source code management
 PyCharm                     Development environment
