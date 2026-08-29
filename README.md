@@ -1,5 +1,6 @@
 # Hidr_Application
 📌 Project Overview
+<p align="justify">
 
 HIDR Automation is an automated testing framework developed to test
 the HIDR Nepal website using Python, Selenium WebDriver, and
@@ -14,7 +15,7 @@ Website: https://hidr.com.np/
 The framework is designed to support functional testing, navigation
 testing, UI validation, regression testing, cross-browser testing,
 broken-link checking, and other web application quality checks.
-
+</P>
 🎯 Project Objectives
 
 The main objectives of this automation project are to:
@@ -38,6 +39,7 @@ Support cross-browser testing.
 Generate test execution reports.
 
 Follow a scalable Page Object Model architecture.
+
 
 🛠️ Technologies & Tools
 
