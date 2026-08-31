@@ -2,17 +2,17 @@
 # 🚀 HIDR E2E & Complete Workflow Automation
 
 ## 📌 Project Overview
-
+<div align="justify">
 **HIDR E2E & Complete Workflow Automation** is an automated testing project developed to validate the complete end-to-end workflow of the **HIDR Nepal website**. The project focuses on simulating real user journeys across multiple modules and verifying that the complete application workflow functions correctly from start to finish.
 
 The automation framework is built using **Python, Selenium WebDriver, and Pytest**, following the **Page Object Model (POM)** design pattern to ensure the test code is reusable, maintainable, scalable, and easy to manage.
 
 **Website:** https://hidr.com.np/
-
+</div>
 ---
 
 ## 🎯 Project Objectives
-
+<div align="justify">
 The main objectives of this project are to:
 
 * Validate complete end-to-end user workflows.
@@ -24,9 +24,9 @@ The main objectives of this project are to:
 * Ensure consistent application behavior across critical workflows.
 
 ---
-
+</div>
 ## 🧪 Testing Scope
-
+<div align="justify">
 The project covers complete workflows across key HIDR website modules, including:
 
 * 🏠 Home Page
@@ -42,9 +42,9 @@ The project covers complete workflows across key HIDR website modules, including
 * 🔄 Complete End-to-End User Journeys
 
 ---
-
+</div>
 ## 🔄 E2E Workflow
-
+<div align="justify">
 The automation validates a complete user journey by performing a sequence of actions across the application:
 
 ```text
@@ -74,7 +74,7 @@ Test Completed Successfully
 ```
 
 ---
-
+</div>
 ## 🛠️ Technologies & Tools
 
 | Technology / Tool           | Purpose                                |
@@ -320,7 +320,7 @@ Test Reporting
 ---
 
 ## 📌 Conclusion
-
+<div align="justify">
 The **HIDR E2E & Complete Workflow Automation** project demonstrates a structured approach to automating real-world application workflows using **Python, Selenium WebDriver, and Pytest**.
 
 By implementing the **Page Object Model**, explicit waits, reusable utilities, and end-to-end workflow validation, the project provides a scalable foundation for functional and regression testing of the HIDR Nepal website.
@@ -331,3 +331,4 @@ By implementing the **Page Object Model**, explicit waits, reusable utilities, a
 **Design Pattern:** Page Object Model (POM)
 **Application:** HIDR Nepal Website
 Automation Project
+</div>
